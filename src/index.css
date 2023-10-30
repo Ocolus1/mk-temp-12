@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* This is your global CSS Stylesheet */
+/* Change on your own risk */
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: "Bricolage Grotesque", sans-serif;
+  }
+
+  /* This is the css for transparent mobile menu */
+  .main-nav-menu-mobile {
+    background: rgba(107, 106, 106, 0.5);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+  }
+
+  /* Navbar --> Navbar.jsx */
+  .header-menu > ul > li {
+    border-bottom: 1px solid transparent;
+  }
+}
